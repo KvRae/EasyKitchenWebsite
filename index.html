@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="488x488" href="assets/img/Android%20icon.png">
     <link rel="icon" type="image/png" sizes="488x488" href="assets/img/Android%20icon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -21,11 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/Incrementing-Animation.css">
     <link rel="stylesheet" href="assets/css/Team.css">
+    <link rel="stylesheet" href="assets/css/modern-style.css">
+    <link rel="stylesheet" href="assets/css/product-design.css">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand" href=""><img src="assets/img/Android%20icon.png" height="50"></a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href=""><img src="assets/img/Android%20icon.png" height="50" alt="Easy Kitchen Logo"></a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item nav-link"><a class="nav-link active" href="#about">About</a></li>
@@ -35,119 +38,291 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url(&quot;assets/img/Yellow%20Indian%20Food-1.png&quot;) center / cover no-repeat;">
+    <header class="masthead" style="background: url('assets/img/Yellow Indian Food-1.png') center / cover no-repeat;">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1 data-bss-disabled-mobile="true" class="pulse animated brand-heading">Easy kitchen</h1>
-                        <p class="pulse animated intro-text">a free, community driven food&nbsp;mobile application.<br>Created with love.</p><a class="btn btn-link btn-circle" role="button" data-bss-hover-animate="pulse" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                        <p class="pulse animated intro-text">Free, community driven food&nbsp;mobile application.<br>Created with love.</p><a class="btn btn-link btn-circle" role="button" data-bss-hover-animate="pulse" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="text-center content-section" id="about" style="background: #ff5757;">
+    <section class="product-showcase" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 data-aos="slide-up" data-aos-duration="50" data-aos-once="true">About Easy Kitchen</h2>
-                    <p data-aos="fade-up" data-aos-delay="50" data-aos-once="true">as its name implies, is a user-friendly and informative food mobile app that will provide recipes and tips on healthy food. It adopts graphic elements and correspondent color solutions to showcase the listed healthy dishes or recipes in an intuitive and visual way.</p>
-                    <p data-aos="fade-up" data-aos-delay="50" data-aos-once="true">From quick weeknight dinners to special occasion dishes, you'll find step-by-step instructions, ingredient lists, and cooking tips to make your cooking experience a breeze.</p>
-                    <p data-aos="fade-up" data-aos-duration="100" data-aos-once="true">Say goodbye to the hassle of meal planning and welcome a world of culinary possibilities with Easy Kitchen.</p>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                    <div class="product-content">
+                        <span class="badge-label">✨ The Smart Way to Cook</span>
+                        <h2 class="section-title">Discover the Future of Cooking</h2>
+                        <p class="section-subtitle">Easy Kitchen transforms your cooking experience with intelligent recipe discovery, nutritional insights, and personalized meal planning—all in your pocket.</p>
+
+                        <div class="features-list">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                                <div class="feature-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Smart Recipe Search</h4>
+                                    <p>Find recipes by ingredients, cuisine, or dietary preference in seconds</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Personalized Favorites</h4>
+                                    <p>Save and organize your favorite recipes for quick access anytime</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Nutritional Insights</h4>
+                                    <p>Track calories, proteins, and nutrients for a healthier lifestyle</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Quick Meal Ideas</h4>
+                                    <p>Get dinner ready in 30 minutes or less with time-saving recipes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                    <div class="phone-mockup-container">
+                        <!-- Phone Mockup with Carousel -->
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="phone-content">
+                                    <!-- Screenshot Carousel -->
+                                    <div class="screenshots-carousel">
+                                        <div class="screenshot-slide active" data-screen="splash">
+                                            <img src="assets/img/Splash%20Screen.png" alt="Splash Screen">
+                                        </div>
+                                        <div class="screenshot-slide" data-screen="home">
+                                            <img src="assets/img/Home%20Screen.png" alt="Home Screen">
+                                        </div>
+                                        <div class="screenshot-slide" data-screen="ingredients">
+                                            <img src="assets/img/Ingredients%20Screen.png" alt="Ingredients Screen">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Cards -->
+                        <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true">
+                            <div class="card-icon">📱</div>
+                            <p class="card-text">Beautiful UI</p>
+                        </div>
+                        <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+                            <div class="card-icon">⚡</div>
+                            <p class="card-text">Easy to  Use</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="font-dark" style="background: #ff5757;">
+    <section class="stats-section">
         <div class="container">
-            <h3 data-aos="slide-up" data-aos-delay="50" data-aos-once="true" class="text-center all-capital p-4" style="font-size: 30px;font-weight: 300;line-height: 38px;letter-spacing: 2px;">Easy Kitchen has</h3>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150" data-aos-once="true" style="padding-top: 20px;padding-bottom: 40px;">
+            <div class="stats-header text-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <h2 class="stats-title">Trusted by Food Lovers Everywhere</h2>
+                <p class="stats-subtitle">Join our community and discover why Easy Kitchen is the #1 choice for home cooking</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
                 <div class="col">
-                    <div><span class="Justify-Flex-Center purecounter counter-font count plus" data-purecounter-start="0" data-purecounter-end="27" data-purecounter-duration="2">27</span>
-                        <p class="text-center text-uppercase">Food Regions</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-number">326+</div>
+                        <div class="stat-label">Delicious Recipes</div>
+                        <p class="stat-description">Curated by culinary experts</p>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div><span class="Justify-Flex-Center purecounter counter-font plus" data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1">14</span>
-                        <p class="text-center text-uppercase">food categories</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-number">27</div>
+                        <div class="stat-label">Food Regions</div>
+                        <p class="stat-description">From around the world</p>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div><span class="Justify-Flex-Center purecounter counter-font plus-k" data-purecounter-start="0" data-purecounter-end="574" data-purecounter-duration="1">574</span>
-                        <p class="text-center text-uppercase">Food ingredients</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Users</div>
+                        <p class="stat-description">Growing daily</p>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div><span class="Justify-Flex-Center purecounter counter-font plus" data-purecounter-start="0" data-purecounter-end="326" data-purecounter-duration="1">326</span>
-                        <p class="text-center text-uppercase">food recipes</p>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">App Rating</div>
+                        <p class="stat-description">Highly appreciated</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="text-center download-section content-section" id="download" style="background: url(&quot;assets/img/downloadBACK.png&quot;) center / cover no-repeat;">
-        <div class="container">
-            <div class="col-lg-8 mx-auto">
-                <h1 data-aos="fade-up" data-aos-once="true">Download Easy kitchen</h1>
-                <p data-aos="fade-up" data-aos-delay="100" data-aos-once="true">Our app is available on&nbsp;</p>
-                <a class="btn btn-primary btn-lg link-light border rounded-pill border-2 btn-default " role="button" data-aos="fade-up" data-aos-delay="100" data-aos-once="true" href="https://drive.google.com/uc?id=1hGynop8giDUv-FvTa0Cph4IXBlcWNRPs&export=download" download="EasyKitchen.apk" style="margin-right: 12px;"><i class="fab fa-android"></i>&nbsp; Download for android</a>
-                <a  style="margin-top: 10px;" class="btn btn-primary btn-lg link-light border rounded-pill border-2 btn-default" role="button" data-aos="fade-up" data-aos-delay="150" data-aos-once="true" href="#"><i class="fab fa-apple"></i>&nbsp; &nbsp;available soon</a>
-            </div>
-        </div>
-    </section>
-    <section id="team" class="bg-light-gray" style="background: #ff5757;">
-        <div class="container">
+    <section class="download-section" id="download">
+        <div class="download-overlay"></div>
+        <div class="container position-relative">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 data-aos="slide-down" data-aos-once="true" class="section-heading">Our Amazing Team</h2>
-                    <h3 data-aos="slide-down" data-aos-once="true" class="section-subheading ">Great work comes from great people</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div data-aos="slide-up" data-aos-once="true" class="team-member"><img class="rounded-circle img-fluid" src="assets/img/Android%20icon.png" width="225" height="255">
-                        <h4>Karam Mannai</h4>
-                        <p >Lead Mobile Developer(Android)</p>
-                        <ul class="list-inline list-inline social-buttons">
-                            <li class="list-inline-item"> <a href="https://github.com/KvRae" target="_blank"><i class="fa fa-github"></i></a></li>
-                            <li class="list-inline-item"> <a href="https://www.facebook.com/KaramMannai/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"> <a href="https://www.linkedin.com/in/karam-mannai/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
+                <div class="col-lg-10 mx-auto text-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    <div class="download-badge" data-aos="zoom-in" data-aos-duration="600" data-aos-once="true">
+                        <i class="fas fa-mobile-alt"></i> Download Now
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div></div>
-                </div>
-                <div class="col-sm-4">
-                    <div data-aos="slide-up" data-aos-delay="100" data-aos-once="true" class="team-member"><img class="rounded-circle img-fluid" src="assets/img/Android%20icon.png" width="225" height="225">
-                        <h4>Med. Yassin Khabtheni</h4>
-                        <p >Lead Mobile Developer(IOS) </p>
-                        <ul class="list-inline list-inline social-buttons">
-                            <li class="list-inline-item"> <a href="https://github.com/medyassin-khabthani" target="_blank"><i class="fa fa-github"></i></a></li>
-                            <li class="list-inline-item"> <a href="https://www.facebook.com/yassin.khabthani" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"> <a href=""><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
+                    <h2 class="download-title">Start Cooking Better Today</h2>
+                    <p class="download-subtitle">Get instant access to 326+ recipes, personalized meal planning, and nutritional insights. Join thousands of satisfied home cooks.</p>
+
+                    <div class="download-features mt-5" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                        <span class="download-feature"><i class="fas fa-check-circle"></i> Free Forever</span>
+                        <span class="download-feature"><i class="fas fa-check-circle"></i> No Ads</span>
+                        <span class="download-feature"><i class="fas fa-check-circle"></i> Offline Access</span>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <p data-aos="slide-up" data-aos-once="true" class="large ">With a thoughtful combination of graphics and corresponding color schemes, Easy Kitchen presents a wide range of nutritious recipes in an intuitive and visually appealing manner. </p>
+
+                    <div class="download-buttons mt-5" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+                        <a class="btn btn-primary btn-lg download-btn android-btn" href="https://drive.google.com/uc?id=1hGynop8giDUv-FvTa0Cph4IXBlcWNRPs&export=download" download="EasyKitchen.apk">
+                            <i class="fab fa-android"></i>
+                            <span>Download for Android</span>
+                        </a>
+                        <a class="btn btn-secondary btn-lg download-btn ios-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>Coming Soon for iOS</span>
+                        </a>
+                    </div>
+
+                    <p class="download-note mt-4" data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
+                        <i class="fas fa-info-circle"></i> Available for Android 8.0+
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="text-center content-section" id="contact" style="background: #FF5757;">
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <h2 class="team-heading">Crafted by Passionate Developers</h2>
+                <p class="team-subheading">Meet the talented team behind Easy Kitchen</p>
+            </div>
+
+            <!-- Karam's Card -->
+            <div class="team-card" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                <div class="team-img-wrapper">
+                    <img class="team-img" src="assets/img/karam.png" alt="Karam Mannai">
+                    <div class="team-overlay">
+                        <div class="team-socials">
+                            <a href="https://github.com/KvRae" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/KaramMannai/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/karam-mannai/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Karam Mannai</h3>
+                    <p class="team-role">Lead Mobile Developer</p>
+                    <span class="team-tech">Android Expert</span>
+                    <p class="team-bio">Expert in Android development with a passion for creating intuitive and performant mobile experiences that users love.</p>
+                    <a href="https://github.com/KvRae" target="_blank" class="team-cta">
+                        View Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Yassin's Card -->
+            <div class="team-card" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                <div class="team-img-wrapper">
+                    <img class="team-img" src="assets/img/yassin.jpeg" alt="Med. Yassin Khabtheni">
+                    <div class="team-overlay">
+                        <div class="team-socials">
+                            <a href="https://github.com/medyassin-khabthani" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/yassin.khabthani" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Med. Yassin Khabtheni</h3>
+                    <p class="team-role">Lead Mobile Developer</p>
+                    <span class="team-tech">iOS Specialist</span>
+                    <p class="team-bio">iOS specialist dedicated to delivering elegant solutions and seamless user interfaces that exceed expectations.</p>
+                    <a href="https://github.com/medyassin-khabthani" target="_blank" class="team-cta">
+                        View Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                <p class="team-description text-center">
+                    Easy Kitchen combines thoughtful design, cutting-edge technology, and a deep understanding of home cooking to deliver an unparalleled mobile experience. Our mission is to make cooking easier, healthier, and more enjoyable for everyone.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 data-aos="slide-up" data-aos-once="true">Contact us</h2>
-                    <p data-aos="slide-up" data-aos-once="true">Feel free to leave us a comment on the&nbsp;
-                        <a href="https://github.com/KvRae/Easy-Kitchen-Android/discussions">GitHub discussion page</a>&nbsp;to give some feedback about this application!</p>
-                    <ul class="list-inline banner-social-buttons" data-aos="flip-up" data-aos-once="true">
-                        <li class="list-inline-item">&nbsp;<a class="btn btn-primary btn-lg link-light border rounded-pill border-2 btn-default" role="button" href="https://github.com/KvRae/Easy-Kitchen-Android" target="_blank"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></a></li>
-                    </ul>
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    <h2 class="contact-title">Join Our Community</h2>
+                    <p class="contact-subtitle">Have feedback or want to contribute? Connect with us on GitHub and be part of the Easy Kitchen journey.</p>
+
+                    <div class="contact-features mt-5" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                        <div class="contact-feature-item">
+                            <i class="fas fa-comments"></i>
+                            <h4>Community Discussions</h4>
+                            <p>Share ideas and feedback with other cooking enthusiasts</p>
+                        </div>
+                        <div class="contact-feature-item">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Open Source</h4>
+                            <p>Contribute to our GitHub repository and help improve the app</p>
+                        </div>
+                        <div class="contact-feature-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Community Driven</h4>
+                            <p>Built by developers who love cooking and technology</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons mt-5" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+                        <a class="btn btn-contact btn-primary" href="https://github.com/KvRae/Easy-Kitchen-Android/discussions" target="_blank">
+                            <i class="fas fa-comments"></i> View Discussions
+                        </a>
+                        <a class="btn btn-contact btn-secondary" href="https://github.com/KvRae/Easy-Kitchen-Android" target="_blank">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,6 +339,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/Incrementing-Animation.js"></script>
+    <script src="assets/js/modern-interactions.js"></script>
+
+    <!-- Screenshot Carousel Script -->
+    <script>
+        let currentScreenIndex = 0;
+        const screens = document.querySelectorAll('.screenshot-slide');
+        let autoPlayTimer;
+
+        function showScreen(index) {
+            // Remove active class from all slides
+            screens.forEach(screen => screen.classList.remove('active'));
+
+            // Add active class to current slide
+            screens[index].classList.add('active');
+            currentScreenIndex = index;
+
+            // Reset auto-play timer
+            resetAutoPlay();
+        }
+
+        function nextScreen() {
+            const nextIndex = (currentScreenIndex + 1) % screens.length;
+            showScreen(nextIndex);
+        }
+
+        function resetAutoPlay() {
+            clearTimeout(autoPlayTimer);
+            autoPlayTimer = setTimeout(() => {
+                nextScreen();
+            }, 5000); // Change screen every 5 seconds
+        }
+
+        // Start auto-play on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            resetAutoPlay();
+        });
+    </script>
 </body>
 
 </html>
