@@ -641,7 +641,7 @@ section > .container > *:nth-child(3) {
 
 .hero-badge {
     animation: fadeInScale 0.8s ease-out forwards;
-    opacity: 0;
+    opacity: 50;
 }
 
 .hero-features span {
