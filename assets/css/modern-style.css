@@ -80,12 +80,34 @@ body {
     height: 40px;
 }
 
+/* Clean nav-item styling - remove all default effects */
+#mainNav .navbar-nav .nav-item {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#mainNav .navbar-nav .nav-item:hover,
+#mainNav .navbar-nav .nav-item:focus,
+#mainNav .navbar-nav .nav-item:active {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
 #mainNav .nav-link {
     font-weight: 500;
     letter-spacing: 0.5px;
     position: relative;
     transition: var(--transition-smooth);
     color: white !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
 }
 
 #mainNav .nav-link::after {
@@ -105,9 +127,37 @@ body {
     width: 80%;
 }
 
+/* Remove all Bootstrap default nav styles */
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link:active,
+#mainNav .nav-link.active,
+#mainNav .nav-link.show {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Remove focus ring from Bootstrap */
+#mainNav .nav-link:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 #mainNav .navbar-toggler {
     border: none;
     color: white;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#mainNav .navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 /* ==================== Hero Section with Modern Gradient Overlay ==================== */
