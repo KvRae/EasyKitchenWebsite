@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/Team.css">
     <link rel="stylesheet" href="assets/css/modern-style.css">
     <link rel="stylesheet" href="assets/css/product-design.css">
+    <link rel="stylesheet" href="assets/css/hero-enhancement.css">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
@@ -38,13 +39,61 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url('assets/img/Yellow Indian Food-1.png') center / cover no-repeat;">
-        <div class="intro-body">
+    <header class="masthead" style="position: relative; overflow: hidden;">
+        <!-- Enhanced Food-Themed Background -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #FF6B35 0%, #F7931E 20%, #FDB833 40%, #F37021 60%, #FF6B35 80%, #E63946 100%); z-index: 0;"></div>
+
+        <!-- Animated Food Icons Pattern -->
+        <div class="hero-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; opacity: 0.15;"></div>
+
+        <!-- Food Geometric Shapes -->
+        <div style="position: absolute; top: 10%; right: 5%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); z-index: 1;"></div>
+        <div style="position: absolute; bottom: 5%; left: 3%; width: 250px; height: 250px; background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%); border-radius: 50%; filter: blur(50px); z-index: 1;"></div>
+
+        <!-- Gradient Overlay for Text Contrast -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.35) 100%); pointer-events: none; z-index: 2;"></div>
+
+        <!-- Hero Content -->
+        <div class="intro-body" style="position: relative; z-index: 3;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h1 data-bss-disabled-mobile="true" class="pulse animated brand-heading">Easy kitchen</h1>
-                        <p class="pulse animated intro-text">Free, community driven food&nbsp;mobile application.<br>Created with love.</p><a class="btn btn-link btn-circle" role="button" data-bss-hover-animate="pulse" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    <div class="col-lg-8 mx-auto text-center">
+                        <!-- Decorative Top Element -->
+                        <div class="hero-badge" style="margin-bottom: 30px; animation: bounceIn 0.8s ease-out;">
+                            <span style="display: inline-block; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 50px; font-size: 0.9rem; font-weight: 600; color: white; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3);">
+                                🍳 Master Your Cooking Skills
+                            </span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h1 class="hero-heading" style="font-size: clamp(3rem, 10vw, 5rem); font-weight: 900; color: white; margin-bottom: 20px; letter-spacing: -2px; text-shadow: 0 4px 20px rgba(0,0,0,0.2); line-height: 1.1;">
+                            Easy Kitchen
+                        </h1>
+
+                        <!-- Subheading -->
+                        <p class="hero-subheading" style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); color: rgba(255,255,255,0.95); margin-bottom: 40px; font-weight: 300; letter-spacing: 0.5px; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
+                            Transform Your Kitchen into a Culinary Masterpiece
+                        </p>
+
+                        <!-- Feature Pills -->
+                        <div class="hero-features" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 40px;">
+                            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background: rgba(255,255,255,0.15); border-radius: 50px; color: white; font-size: 0.95rem; font-weight: 500; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                                <i class="fas fa-book" style="font-size: 1.2rem;"></i> 326+ Recipes
+                            </span>
+                            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background: rgba(255,255,255,0.15); border-radius: 50px; color: white; font-size: 0.95rem; font-weight: 500; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                                <i class="fas fa-globe" style="font-size: 1.2rem;"></i> 27 Regions
+                            </span>
+                            <span style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background: rgba(255,255,255,0.15); border-radius: 50px; color: white; font-size: 0.95rem; font-weight: 500; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                                <i class="fas fa-star" style="font-size: 1.2rem;"></i> 4.8 Rating
+                            </span>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div style="margin-bottom: 50px;">
+                            <a href="#about" class="hero-cta-btn" style="display: inline-block; padding: 16px 45px; background: white; color: #FF6B35; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: all 0.3s ease; cursor: pointer; letter-spacing: 0.5px;">
+                                Discover Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -346,40 +395,98 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/Incrementing-Animation.js"></script>
     <script src="assets/js/modern-interactions.js"></script>
+    <script src="assets/js/carousel.js"></script>
 
-    <!-- Screenshot Carousel Script -->
+    <!-- Screenshot Carousel Script - Enhanced with Mobile Support -->
     <script>
-        let currentScreenIndex = 0;
-        const screens = document.querySelectorAll('.screenshot-slide');
-        let autoPlayTimer;
-
-        function showScreen(index) {
-            // Remove active class from all slides
-            screens.forEach(screen => screen.classList.remove('active'));
-
-            // Add active class to current slide
-            screens[index].classList.add('active');
-            currentScreenIndex = index;
-
-            // Reset auto-play timer
-            resetAutoPlay();
-        }
-
-        function nextScreen() {
-            const nextIndex = (currentScreenIndex + 1) % screens.length;
-            showScreen(nextIndex);
-        }
-
-        function resetAutoPlay() {
-            clearTimeout(autoPlayTimer);
-            autoPlayTimer = setTimeout(() => {
-                nextScreen();
-            }, 5000); // Change screen every 5 seconds
-        }
-
-        // Start auto-play on page load
         document.addEventListener('DOMContentLoaded', function() {
-            resetAutoPlay();
+            let currentScreenIndex = 0;
+            const screens = document.querySelectorAll('.screenshot-slide');
+            let autoPlayTimer;
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function showScreen(index) {
+                if (screens.length === 0) return;
+
+                // Ensure index is within bounds
+                index = (index + screens.length) % screens.length;
+
+                // Remove active class from all slides
+                screens.forEach(screen => screen.classList.remove('active'));
+
+                // Add active class to current slide
+                if (screens[index]) {
+                    screens[index].classList.add('active');
+                    currentScreenIndex = index;
+                }
+
+                // Reset auto-play timer
+                resetAutoPlay();
+            }
+
+            function nextScreen() {
+                const nextIndex = (currentScreenIndex + 1) % screens.length;
+                showScreen(nextIndex);
+            }
+
+            function prevScreen() {
+                const prevIndex = (currentScreenIndex - 1 + screens.length) % screens.length;
+                showScreen(prevIndex);
+            }
+
+            function resetAutoPlay() {
+                clearTimeout(autoPlayTimer);
+                autoPlayTimer = setTimeout(() => {
+                    nextScreen();
+                }, 5000); // Change screen every 5 seconds
+            }
+
+            // Touch support for mobile swipe
+            const phoneContent = document.querySelector('.phone-content');
+            if (phoneContent) {
+                phoneContent.addEventListener('touchstart', function(e) {
+                    touchStartX = e.changedTouches[0].screenX;
+                    clearTimeout(autoPlayTimer);
+                });
+
+                phoneContent.addEventListener('touchend', function(e) {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                });
+
+                // Pause autoplay on mouse enter
+                phoneContent.addEventListener('mouseenter', () => clearTimeout(autoPlayTimer));
+                phoneContent.addEventListener('mouseleave', () => resetAutoPlay());
+            }
+
+            function handleSwipe() {
+                // Swipe left - next slide
+                if (touchStartX - touchEndX > 50) {
+                    nextScreen();
+                }
+                // Swipe right - previous slide
+                else if (touchEndX - touchStartX > 50) {
+                    prevScreen();
+                }
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') prevScreen();
+                if (e.key === 'ArrowRight') nextScreen();
+            });
+
+            // Make functions globally accessible for carousel controls
+            window.nextScreen = nextScreen;
+            window.prevScreen = prevScreen;
+            window.showScreen = showScreen;
+
+            // Start auto-play on page load
+            if (screens.length > 0) {
+                showScreen(0);
+                resetAutoPlay();
+            }
         });
     </script>
 </body>

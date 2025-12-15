@@ -113,7 +113,11 @@ body {
 /* ==================== Hero Section with Modern Gradient Overlay ==================== */
 .masthead {
     position: relative;
-    padding: 10rem 0;
+    padding: 12rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-attachment: fixed !important;
 }
 
@@ -131,6 +135,7 @@ body {
 .masthead .intro-body {
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 
 .masthead .brand-heading {
@@ -571,5 +576,146 @@ section > .container > *:nth-child(2) {
 
 section > .container > *:nth-child(3) {
     animation-delay: 0.3s;
+}
+
+/* ==================== Enhanced Hero Section Animations ==================== */
+.hero-heading {
+    animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    opacity: 0;
+}
+
+.hero-subheading {
+    animation: slideInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.hero-badge {
+    animation: fadeInScale 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-features span {
+    animation: slideInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-features span:nth-child(1) { animation-delay: 0.4s; }
+.hero-features span:nth-child(2) { animation-delay: 0.5s; }
+.hero-features span:nth-child(3) { animation-delay: 0.6s; }
+
+.hero-cta-btn {
+    animation: slideInUp 0.8s ease-out 0.7s forwards;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.hero-cta-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.hero-cta-btn:hover::before {
+    left: 100%;
+}
+
+/* Hero Pattern Animation */
+.hero-pattern {
+    animation: patternShift 15s linear infinite;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes patternShift {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(20px) translateY(10px); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hero features interactive effect */
+.hero-features span {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hero-features span:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(255,255,255,0.25) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hero-features span::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { opacity: 0; transform: translateX(-100%); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(100%); }
 }
 

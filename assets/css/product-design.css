@@ -198,6 +198,225 @@
     display: block;
 }
 
+/* Mobile Responsive - Tablet */
+@media (max-width: 1024px) {
+    .phone-mockup-container {
+        height: 500px;
+    }
+
+    .phone-mockup {
+        width: 240px;
+        height: 680px;
+    }
+
+    .phone-mockup::before {
+        width: 120px;
+    }
+}
+
+/* Mobile Responsive - Small Tablet */
+@media (max-width: 768px) {
+    .phone-mockup-container {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative !important;
+    }
+
+    .phone-mockup {
+        width: 180px;
+        height: 360px;
+        border-radius: 30px;
+        padding: 10px;
+        position: relative !important;
+        margin-bottom: 20px;
+    }
+
+    .phone-mockup::before {
+        width: 100px;
+        height: 20px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .floating-card {
+        position: static !important;
+        display: flex !important;
+        margin: 15px auto !important;
+        max-width: 250px;
+        animation: none !important;
+        transform: none !important;
+        width: 100% !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    .card-1 {
+        margin-top: 25px !important;
+        margin-bottom: 15px !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+    .card-2 {
+        margin-top: 15px !important;
+        margin-bottom: 20px !important;
+        top: auto !important;
+        right: auto !important;
+    }
+}
+
+/* Mobile Responsive - Phone */
+@media (max-width: 576px) {
+    .phone-mockup-container {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        min-height: auto !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative !important;
+    }
+
+    .phone-mockup {
+        width: 160px;
+        height: 320px;
+        border-radius: 25px;
+        padding: 8px;
+        position: relative !important;
+        margin-bottom: 20px;
+    }
+
+    .phone-mockup::before {
+        width: 90px;
+        height: 18px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .floating-card {
+        position: static !important;
+        display: flex !important;
+        margin: 12px auto !important;
+        max-width: 220px;
+        animation: none !important;
+        transform: none !important;
+        padding: 12px 15px;
+        width: 100% !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .card-1 {
+        margin-top: 20px !important;
+        margin-bottom: 12px !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+    .card-2 {
+        margin-top: 12px !important;
+        margin-bottom: 20px !important;
+        top: auto !important;
+        right: auto !important;
+    }
+}
+
+/* Mobile Responsive - Small Phone */
+@media (max-width: 480px) {
+    .phone-mockup-container {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        min-height: auto !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative !important;
+    }
+
+    .phone-mockup {
+        width: 140px;
+        height: 280px;
+        border-radius: 20px;
+        padding: 6px;
+        position: relative !important;
+        margin-bottom: 20px;
+    }
+
+    .phone-mockup::before {
+        width: 75px;
+        height: 15px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .floating-card {
+        position: static !important;
+        display: flex !important;
+        margin: 10px auto !important;
+        max-width: 200px;
+        animation: none !important;
+        transform: none !important;
+        padding: 10px 12px;
+        width: 100% !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    .card-icon {
+        font-size: 1.4rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .card-1 {
+        margin-top: 18px !important;
+        margin-bottom: 10px !important;
+        bottom: auto !important;
+        left: auto !important;
+    }
+
+    .card-2 {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        top: auto !important;
+        right: auto !important;
+    }
+
+    .carousel-controls {
+        display: none !important;
+    }
+
+    .carousel-btn {
+        display: none !important;
+    }
+
+    .indicator {
+        display: none !important;
+    }
+}
+
 /* Floating Cards */
 .floating-card {
     position: absolute;
@@ -244,6 +463,10 @@
     0%, 100% { transform: translateY(0px) rotateZ(5deg); }
     50% { transform: translateY(-20px) rotateZ(0deg); }
 }
+
+/* Mobile: Reposition floating cards below phone mockup - Already handled in main media queries above */
+
+
 
 /* ==================== STATS SECTION ==================== */
 .stats-section {
@@ -559,7 +782,6 @@
 .team-card {
     display: flex;
     gap: 30px;
-    align-items: center;
     background: white;
     border-radius: 16px;
     overflow: hidden;
@@ -568,6 +790,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
     padding: 30px;
+    min-height: 340px;
 }
 
 .team-card:hover {
@@ -652,6 +875,8 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    min-height: 280px;
+    height: 100%;
 }
 
 .team-name {
@@ -906,6 +1131,13 @@
     backdrop-filter: blur(10px);
 }
 
+/* Hide carousel controls on mobile */
+@media (max-width: 768px) {
+    .carousel-controls {
+        display: none !important;
+    }
+}
+
 .carousel-btn {
     background: rgba(255, 255, 255, 0.8);
     border: none;
@@ -975,6 +1207,15 @@ footer p {
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Large Desktop */
+@media (max-width: 1024px) {
+    .product-content {
+        padding-right: 20px;
+    }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
     .product-content {
         padding-right: 0;
@@ -983,17 +1224,46 @@ footer p {
 
     .phone-mockup-container {
         height: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .phone-mockup {
-        width: 240px;
-        height: 480px;
+        width: 200px;
+        height: 400px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .phone-mockup::before {
+        width: 100px;
+        height: 20px;
+        border-radius: 0 0 20px 20px;
     }
 
     .floating-card {
         position: static !important;
         margin: 15px auto;
         max-width: 250px;
+        display: flex;
+    }
+
+    .carousel-controls {
+        bottom: 12px;
+        padding: 8px 12px;
+        gap: 10px;
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    .indicator {
+        width: 7px;
+        height: 7px;
+        gap: 6px;
     }
 
     .download-buttons {
@@ -1056,6 +1326,53 @@ footer p {
     }
 }
 
+/* Small Tablet */
+@media (max-width: 600px) {
+    .phone-mockup-container {
+        height: 360px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .phone-mockup {
+        width: 180px;
+        height: 350px;
+        border-radius: 25px;
+        padding: 8px;
+    }
+
+    .phone-mockup::before {
+        width: 90px;
+        height: 18px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .floating-card {
+        display: flex !important;
+        margin: 12px auto;
+        max-width: 220px;
+    }
+
+    .carousel-controls {
+        bottom: 10px;
+        padding: 6px 10px;
+        gap: 8px;
+    }
+
+    .carousel-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    .indicator {
+        width: 6px;
+        height: 6px;
+        gap: 5px;
+    }
+}
+
+/* Phone */
 @media (max-width: 480px) {
     .section-title {
         font-size: 1.8rem;
@@ -1069,9 +1386,58 @@ footer p {
         font-size: 2rem;
     }
 
+    .phone-mockup-container {
+        height: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-height: 320px;
+    }
+
     .phone-mockup {
-        width: 200px;
-        height: 400px;
+        width: 160px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+
+    .phone-mockup::before {
+        width: 80px;
+        height: 15px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .floating-card {
+        display: flex !important;
+        margin: 10px auto;
+        max-width: 200px;
+        padding: 12px 15px;
+        font-size: 0.85rem;
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .carousel-controls {
+        bottom: 8px;
+        padding: 5px 8px;
+        gap: 6px;
+    }
+
+    .carousel-btn {
+        width: 26px;
+        height: 26px;
+        font-size: 0.75rem;
+    }
+
+    .indicator {
+        width: 5px;
+        height: 5px;
+        gap: 4px;
     }
 
     .stat-number {
@@ -1096,6 +1462,46 @@ footer p {
 
     .contact-feature-item p {
         font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Phone */
+@media (max-width: 360px) {
+    .phone-mockup-container {
+        height: 280px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .phone-mockup {
+        width: 140px;
+        height: 260px;
+        border-radius: 18px;
+        padding: 5px;
+    }
+
+    .phone-mockup::before {
+        width: 70px;
+        height: 12px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .carousel-controls {
+        bottom: 6px;
+        padding: 4px 6px;
+        gap: 4px;
+    }
+
+    .carousel-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 0.7rem;
+    }
+
+    .indicator {
+        width: 4px;
+        height: 4px;
+        gap: 3px;
     }
 }
 
