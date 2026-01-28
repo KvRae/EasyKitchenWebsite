@@ -544,6 +544,15 @@ footer p {
     font-size: 0.9rem;
 }
 
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+}
+
 /* ==================== Scroll Progress Indicator ==================== */
 .scroll-progress {
     position: fixed;
